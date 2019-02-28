@@ -1,9 +1,79 @@
 
 #body {
-	margin: 0;
-  background-color: #0000FF;
+	margin-bottom: 10px;
+	background-color: #485ECC;
+}
+
+.container{
+	padding-top: 15px;
+
+			}
+
+.form-control {
+	height: 40px;
+
+}
+
+#titulo {
+	text-align: center;
+
 }
 
 #doguinho {
-	background-color: yellow;
+	background-color: #E5AD08;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-left: none;
+
+}
+
+#dog {
+	 height: auto;
+	 max-width: 100%;
+	 position: absolute;
+	 right: 0;
+	 bottom: 0;
+}
+
+#form {
+	background-color: white;
+	padding: 40px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.form-control {
+	border-radius: 25px;
+	font-size: 15px;
+}
+
+.form-control-lg {
+	height: 45px;
+}
+
+#button0 {
+	border-radius: 25px;
+	height: 45px;
+
+}
+
+#button1 {
+	border-radius: 25px;
+	background-color: #FE2E2E;
+	border-color: #FE2E2E;
+	height: 45px;
+}
+
+#button2 {
+	border-radius: 25px;
+	background-color: #013ADF;
+	border-color: #013ADF;
+	height: 45px;
+}
+
+#question {
+	font-size: 15px;
+	line-height: 10px;
+	text-align: center;
+
 }

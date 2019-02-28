@@ -1,28 +1,91 @@
+<!-- Comentários
+    Levei cerca de 3hrs para fazer o HTML e o CSS. Utilizei o Bootstrap.
+    Levei cerca de 2h30min para fazer a validação dos campos.
+    Levei cerca de 1h para ajustar a imagem. Queria que ela ficasse responsiva.
+    Me preocupei com cada detalhe do layout.
+ -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
   	<meta charset="utf-8">
   	<meta name="author" content="Gisele">
 
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-
-    <!-- Bootstrap -->
+    <!-- CSS Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!-- Font Awesome, para os ícones. -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- Jquery utilizado para máscara de telefone -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js "></script>
+    <script src="js/mask.js"></script>
+
+    <!-- Validação de campos em Javascript -->
+    <script type="text/javascript" src="js/script.js"></script>
+
   </head>
 
   <body id="body">
-  	<div class="container">
+  	<div class="container col-10 min-height-200">
   		<div class="row">
-  			<div class="col-sm" id="doguinho">
-  				Doguinho
+  			<div class="col-sm-5" id="doguinho">
+  				<img id="dog" src="img/doguinho.png" alt="doguinho" title="doguinho">
   			</div>
-    		<div class="col-sm" id="form">
-      		Formulário
-      	</div>
+    		<div class="col-sm-7" id="form">
 
+      	   <h4 id="titulo">Create an Account!</h4><br>
 
+            <form name="formuser"  id="formulario" action="thankyou.html" method="post" onsubmit="return validacao();"> <!-- Formulário utilizando Bootstrap -->
 
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" id="nome" name="nome" class="form-control form-control-lg" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" name="phone" id="telefone" class="form-control form-control-lg" placeholder="Phone">
+                </div>
+              </div>
 
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Email Address">
+              </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="password" name="password" class="form-control form-control-lg" placeholder="Password">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="password" name="password2" class="form-control form-control-lg" placeholder="Repeat Password">
+                </div>
+              </div>
+
+              <button type="submit" name="submit" id="button0" class="btn btn-primary col-md-12" onclick="myfun()">
+                 Register Account</button><br>
+              <hr> </hr>
+
+              <button id="button1" type="button" class="btn btn-primary col-md-12">
+              	<i class="fab fa-google"></i>   Register with Google</button> <br><br>
+
+              <button id="button2" type="button" class="btn btn-primary col-md-12">
+              	<i class="fab fa-facebook-f"></i>   Register with Facebook</button>
+
+              <hr> </hr><br>
+
+              <p id="question">
+                <a href="#"> Forgot Password? </a>
+              </p>
+
+              <p id="question">
+                <a href="#"> Already have an account? Login! </a>
+              </p>
+           </form>
+      </div>
   </body>
 </html>
