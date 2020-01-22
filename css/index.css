@@ -28,8 +28,7 @@
 	@media (min-width: 576px) {
 		#doguinho {
 			background-color: #E5AD08;
-			border-top-left-radius: 8px;
-			border-bottom-left-radius: 8px;
+			border-radius: 8px 0 0 8px;
 			border-left: none;
 
 		}
@@ -60,8 +59,7 @@
 		#form {
 			background-color: #ffffff;
 			padding: 40px;
-			border-top-right-radius: 8px;
-			border-bottom-right-radius: 8px;
+			border-radius: 0 8px 8px 0;
 		}	
 	}
 
