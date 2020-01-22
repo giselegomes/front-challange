@@ -19,28 +19,52 @@
 
 }
 
+/* Dogliro */
+
 #doguinho {
 	background-color: #E5AD08;
-	border-top-left-radius: 8px;
-	border-bottom-left-radius: 8px;
-	border-left: none;
-
+	border-radius: 8px 8px 0 0;
 }
+	@media (min-width: 576px) {
+		#doguinho {
+			background-color: #E5AD08;
+			border-top-left-radius: 8px;
+			border-bottom-left-radius: 8px;
+			border-left: none;
+
+		}
+	}
+
 
 #dog {
-	 height: auto;
-	 max-width: 100%;
+	height: auto;
+	max-width: 100%;
+	margin: 0e;
+}
+
+@media (min-width: 576px) {
+	#dog {
 	 position: absolute;
 	 right: 0;
 	 bottom: 0;
+	}
 }
 
+
 #form {
-	background-color: white;
-	padding: 40px;
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
+	background-color: #ffffff;
+	padding: 18px;
+	border-radius: 0 0 8px 8px;
 }
+	@media (min-width: 576px) {
+		#form {
+			background-color: #ffffff;
+			padding: 40px;
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+		}	
+	}
+
 
 .form-control {
 	border-radius: 25px;
