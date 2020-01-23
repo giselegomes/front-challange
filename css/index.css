@@ -23,15 +23,25 @@ body {
 	background-color: #E5AD08;
 	border-radius: 8px 8px 0 0;
 	padding: 0;
-}
-	@media (min-width: 576px) {
-		#doguinho {
-			background-color: #E5AD08;
-			border-radius: 8px 0 0 8px;
-			border-left: none;
 
-		}
+}
+
+@media (min-width: 576px) {
+	#doguinho {
+		background-color: #E5AD08;
+		border-radius: 8px 0 0 8px;
+		border-left: none;
+		height: 665px;
+
 	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	#doguinho {
+		background-color: #E5AD08;
+		height: 970px;
+	}
+}
 
 #dog {
 	height: auto;
@@ -39,14 +49,13 @@ body {
 	margin: 0e;
 }
 
-	@media (min-width: 576px) {
-		#dog {
+@media (min-width: 576px) {
+	#dog {
 		position: absolute;
 		right: 0;
 		bottom: 0;
-		}
 	}
-
+}
 
 /* formulario */
 
@@ -55,13 +64,23 @@ body {
 	padding: 18px;
 	border-radius: 0 0 8px 8px;
 }
-	@media (min-width: 576px) {
-		#form {
-			background-color: #ffffff;
-			padding: 40px;
-			border-radius: 0 8px 8px 0;
-		}	
+
+@media (min-width: 576px) {
+	#form {
+		background-color: #ffffff;
+		padding: 40px;
+		border-radius: 0 8px 8px 0;
 	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	#form {
+		height: 970px;
+		padding: 160px 40px;
+		
+	}
+}
+
 
 .form-control {
 	border-radius: 25px;
@@ -82,7 +101,7 @@ body {
 	background-color: #FE2E2E;
 	border-color: #FE2E2E;
 	height: 45px;
-	margin-bottom: 15px;
+	margin: 20px 0;
 }
 
 #button2 {
@@ -90,6 +109,7 @@ body {
 	background-color: #013ADF;
 	border-color: #013ADF;
 	height: 45px;
+	margin: 10px 0;
 }
 
 #question {
@@ -99,12 +119,12 @@ body {
 
 }
 
-#teste  {
+#teste {
 	display: block;
-    margin: 20px;
-    text-align: center;
-    color: white;
-    font-size: 12px;	
+	margin: 20px;
+	text-align: center;
+	color: white;
+	font-size: 12px;
 }
 
 @media (min-width: 576px) {
