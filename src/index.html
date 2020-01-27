@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Front-end Challenge | Register Account">
+    <meta name="author" content="Gisele Gomes">
+
+    <title>Register Account</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Font awesome for the icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"  
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" >
+        <div class="row" id="container"> 
+            <!-- Image -->
+            <div class="col-12 col-sm-5 px-1" id="dog">
+                <img class="img-fluid float-left" src="/assets/img/pug.png" alt="Pug preto: cachorro prego da raça pug, vestindo uma blusa de lã"
+                title="Pug preto">
+            </div>
+            <!-- Form register account -->
+            <div class="col-12 col-sm-7 mx-0 text-center" id="form">
+                <h1 id="title">Creat an Account</h1>
+                <form id="register" action="">
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <input type="text" class="form-control" id="inputName" placeholder="First Name">
+                            <span class="errorName" id="nameMessageError"></span>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+                            <span class="errorPhone" id="phoneMessageError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group form col-sm-12">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Email Address">
+                            <span class="errorEmail text-left" id="emailMessageError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            <span class="errorPassword" id="passwordMessageError"></span>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <input type="password" class="form-control" id="inputRepeatPassword"
+                                placeholder="Repeat Password">
+                            <span class="errorRepeatPassword py-1" id="repeatPasswordMessageError"></span>
+                        </div>
+                    </div>
+                    <!-- buttons -->
+                        <button type="submit" class="btn col-sm-12 py-3" id="btnRegister">Register Account </button>
+                        <hr class="col-sm-10">
+                        <button type="button" class="btn col-sm-12 mb-3 py-3" id="btnGoogle">
+                            <i id="iconGoogle" class="fab fa-google"></i>Register with Google</button>
+                        <button type="button" class="btn col-sm-12 py-3" id="btnFacebook">
+                            <i id="iconFacebook" class="fab fa-facebook-f"></i>Register with Facebook</button>
+                        <hr class="col-sm-10">
+                        <div class="list-group">
+                            <a id="forgotPassword" href="#">Forgot password?</a>
+                            <a id="login" href="#">Already have an account? Login!</a>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Phone number mask  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js "></script>
+    <script src="/js/mask.js"></script>
+
+    <script src="jsjquery-1.6.2.min.js"></script>
+
+    <!-- Form validate -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

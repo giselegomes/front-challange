@@ -1,0 +1,157 @@
+//Bootstrap import
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//Declaration of variables
+$bg-color: #335BCC;
+$bg-color-dog: #EEB603;
+$bg-color-form: #FFFFFF;
+$text-btn: #FFFFFF;
+$btn-register: #4E74DE;
+
+$btn-google: #EA4236;
+$btn-facebook: #3A5898;
+$error-message: #FF2401;
+$link: #7A97DF;
+$hover-link: #00487C;
+
+// mixins
+
+@mixin side {
+    border-radius: 30px;
+}
+
+@mixin error {
+    color: $error-message;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+@mixin links {
+    color: $link;
+    font-size: 16px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: $bg-color;
+}
+
+#container {
+    margin-top: 0px;
+    display: flex;
+
+    @media (min-width: 576px) {
+        margin: 40px 0;
+        display: flex;
+    }
+}
+
+// dog 
+
+#dog {
+    background-color: $bg-color-dog;
+    border-radius: 0;
+
+    @media (min-width: 576px) {
+        border-radius: 8px 0 0 8px;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+        margin: 0;
+
+        @media (min-width: 576px) {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+// formulario
+
+#form {
+    background-color: $bg-color-form;
+
+    @media (min-width: 576px) {
+        border-radius: 0 8px 8px 0
+    }
+
+    .form-control {
+        @include side;
+        // padding: 0 15px;
+        height: 50px;
+        // margin: 0 10px;
+    }
+}
+
+#title {
+    font-size: 28px;
+    font-weight: 300;
+    margin: 25px;
+    display: block;
+}
+
+.errorName,
+.errorPhone,
+.errorEmail,
+.errorPassword,
+.errorRepeatPassword {
+    @include error;
+}
+
+.btn {
+    @include side;
+    color: $text-btn;
+}
+
+#btnRegister {
+    background-color: $btn-register;
+}
+
+#btnRegister:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: $btn-register;
+    box-shadow: 0 0 0 3px $btn-register;
+}
+
+#btnGoogle {
+    background-color: $btn-google;
+}
+
+#btnGoogle:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: $btn-google;
+    box-shadow: 0 0 0 3px $btn-google;
+}
+
+#btnFacebook {
+    background-color: $btn-facebook;
+}
+
+#btnFacebook:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: $btn-facebook;
+    box-shadow: 0 0 0 3px $btn-facebook;
+}
+
+#iconGoogle,
+#iconFacebook {
+    width: 30px;
+}
+
+#forgotPassword,
+#login {
+    @include links;
+}
+    
+#forgotPassword:hover, #login:hover {
+        color: $hover-link;
+    }
+
+#login {
+    margin-bottom: 20px;
+}
